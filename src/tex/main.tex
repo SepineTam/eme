@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+
+% 导入必要的包
+\usepackage[utf8]{inputenc} % 支持 UTF-8 编码
+\usepackage{booktabs} % 用于美化表格
+\usepackage{geometry} % 页面布局
+\geometry{a4paper, margin=1in} % 页面设置
+
+% 文档信息
+\title{Paper Notebook}
+\author{Sepine \\ Shanghai University}
+\date{\today}
+
+\begin{document}
+
+\maketitle % 显示标题
+
+\section{Introduction}
+This document includes a table exported from Stata. Below is the table included from `09iv.tex`.
+
+\section{Table Example}
+\input{09iv.tex} % 插入 Stata 导出的表格
+
+\section{Conclusion}
+The table above was directly imported from a separate file exported by Stata.
+
+\end{document}
