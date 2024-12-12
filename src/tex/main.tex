@@ -17,9 +17,49 @@
 
 \section{Introduction}
 This document includes a table exported from Stata. Below is the table included from `09iv.tex`.
+This document includes a table exported from Stata. Below is the table included from `09iv.tex`.
 
-\section{Table Example}
+This document includes a table exported from Stata. Below is the table included from `09iv.tex`.
+This document includes a table exported from Stata. Below is the table included from `09iv.tex`.
+This document includes a table exported from Stata. Below is the table included from `09iv.tex`.
+
+This document includes a table exported from Stata. Below is the table included from `09iv.tex`.
+This document includes a table exported from Stata. Below is the table included from `09iv.tex`.
+
+\section{Data}
+\subsection{Source}
+The data comes from lots of source including World Bank which I get the GDP data, IMF and OECD whcih I get the FDI data and exchange rate data.
+Over them, I get the data of tea production from National Bureau of Statistics of China.
+The import and export data whose HS code is matched as "09xxxx" which is also necessary is catched from EPS data platform.
+\subsection{Summarize}
+I keep the code matches "0901xx" and "0902xx", which is referred coffee and tea.
+And here is the summarize statistics as follow table:
+
+% \input{summarize.tex}
+
+
+
+\subsection{Elasticity}
+As the response is expected to identified about the Covid-19, the elasticity is necessary for it.
+Thus the calculation for elasticity is a problem for it, vast majority the elasticity is caused by "log-log" model' s parameters of $\beta_1$.
+
+$$P = \beta_0 + \beta_1 \cdot Q + \epsilon$$
+
+However, I find found that I could use a instrumental variable(IV) to get the elasticity more effective.
+
+Differently with traditional formula, the iv function is more effective for it to solve endonal problem(Angrist and Krueger, 2001). The function as follow:
+
+$$E = {Cov(P, IV) \over Cov(Q, IV)}$$
+
+In order to find out a great IV for calculating the elasticity, there are two necessary conditions that the F-calue is over 10 at OLS and the p-value is less than 0.05.
+Therefore the regression result is follow:
+
 \input{09iv.tex} % 插入 Stata 导出的表格
+
+Based on the result, the production of tea is a realy great IV for us to identify the elasticity about the import price with import quantity which means the value is possible to be calculated by that.
+What I want to explore is whether the Covid-19 influents the elasticity in the international trade.
+
+
 
 \section{Conclusion}
 The table above was directly imported from a separate file exported by Stata.

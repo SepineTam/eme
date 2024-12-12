@@ -38,6 +38,13 @@ eststo model2_2sls
 rm ../tex/09iv.tex
 esttab model1 model2 model1_2sls model2_2sls using "../tex/09iv.tex", replace booktabs b(3) stats(F p) 
 // esttab using "09iv.tex", replace booktabs
-esttab model1 model2 model1_2sls model2_2sls, b(3) stats(r2 F p) 
+esttab model1 model2 model1_2sls model2_2sls, b(3) stats(F p) 
+
+
+use 09cn.dta, clear
+keep if len == 6
+tabstat im_p im_q limp limq tea, ///
+        c(stat) stat(sum mean sd min max n)
+
 
 

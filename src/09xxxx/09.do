@@ -1,6 +1,6 @@
 cd /Users/sepinetam/Documents/Stata/projs/eme/src/09xxxx
-// import delimited "09.cn.csv", stringcols(2), clear
-import delimited "/Users/sepinetam/Documents/Stata/projs/eme/src/09xxxx/09.cn.csv" stringcols(2) numericcols(19), clear
+import delimited "09.cn.csv", stringcols(2) clear
+// import delimited "/Users/sepinetam/Documents/Stata/projs/eme/src/09xxxx/09.cn.csv" stringcols(2) numericcols(19) clear
 
 save 09cn.dta, replace
 use 09cn.dta, clear
