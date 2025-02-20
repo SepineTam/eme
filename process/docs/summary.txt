@@ -1,0 +1,12 @@
+	(1)
+VARIABLES	limp
+	
+limq	-0.434***
+	(0.0723)
+Constant	4.887***
+	(0.386)
+	
+Observations	11
+R-squared	0.800
+Standard errors in parentheses	
+*** p<0.01, ** p<0.05, * p<0.1	

@@ -1,0 +1,19 @@
+	(1)	(2)	(3)	(4)
+VARIABLES	limp	limp	limp	limp
+				
+tea	0.0187***			
+	(0.00288)			
+lgdp		4.839***		
+		(0.758)		
+lpop			207.5***	
+			(37.89)	
+rate				1.313***
+				(0.475)
+Constant	-2.717***	-64.18***	-2,457***	-6.047*
+	(0.868)	(10.50)	(449.3)	(3.274)
+				
+Observations	67	67	67	75
+R-squared	0.394	0.385	0.316	0.095
+F-statistic	42.20	40.77	29.98	7.654
+Standard errors in parentheses				
+*** p<0.01, ** p<0.05, * p<0.1				
